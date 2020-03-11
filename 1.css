@@ -1,0 +1,81 @@
+body{background-color: lavenderblush; background-image: url("images/Hyundai__.png") ;
+  background-repeat: no-repeat;
+ margin: 20px 30px 20px 30px;
+  background-position: center;
+  background-size: 1450px 670px;
+  background-blend-mode: soft-light;
+
+}
+.op3
+{
+  opacity:0.3;
+  filter:alpha(opacity=70);
+  display: inline-block;
+  margin-left: 3%;
+}
+#content{
+  place-content: center;
+  background-size: 100%;
+  margin-top: 30%;
+
+}
+#header{
+  font-family:Tahoma, Geneva, sans-serif !important;
+  font-size:25pt; height: 50px;
+  font-weight:normal; padding:20px 30px;
+  word-break:normal;
+  border-color:beige;color: mintcream;background-color:plum;
+  text-align:center; opacity:0.9; border-style:solid;
+  vertical-align:middle;
+}
+.center {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 70%;
+ }
+div.item {
+  vertical-align: text-bottom;
+  display: inline-block;
+  text-align: center;
+  width: 80%;
+}
+
+footer{
+  font-family:Tahoma, Geneva, sans-serif !important;
+  font-size:18px; padding:20px 30px;
+  font-weight:normal;height: 50px;
+  word-break:normal;
+  border-color:beige;color:mintcream;background-color: plum;
+  text-align:center; opacity:0.9; border-style:solid;
+  vertical-align:middle;
+}
+p {
+  font-family: "Arial Black";
+  font-size: 20pt;
+  border-bottom-style: groove;
+  border-bottom-color: #b3d4fc;
+  border-bottom-width: thick;
+}
+
+.form{
+border-bottom-style: groove;
+  border-bottom-color: #b3d4fc;
+  border-bottom-width: thick;
+  padding-bottom: 30px ;
+
+}
+.btn{  background-color: palegreen;
+  color: lightgoldenrodyellow;
+  padding: 5px;
+  margin: 3px 0;
+  border: none;
+  width: 4%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.btn:hover {
+  background-color: lightseagreen;
+
+}
