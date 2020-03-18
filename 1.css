@@ -1,11 +1,21 @@
-body{background-color: lavenderblush; background-image: url("images/Hyundai__.png") ;
-  background-repeat: no-repeat;
- margin: 20px 30px 20px 30px;
-  background-position: center;
-  background-size: 1450px 670px;
-  background-blend-mode: soft-light;
 
+body{background-color: lavenderblush; background-image: url("images/Hyundai__.png") ;
+  background-repeat: repeat-y;
+ margin: 0px 30px 0px 30px;
+  background-position: center;
+  background-size:  1290px 687px;
+  background-blend-mode: soft-light;
 }
+@media screen and (min-device-width: 1400px){
+  div{width: 1200px;}
+}
+@media screen and (device-width: 1280px) {
+  div{width: 1100px;}
+}
+@media screen and (device-width: 1024px){
+  div{width: 980px;}
+}
+
 .op3
 {
   opacity:0.3;
@@ -24,9 +34,9 @@ body{background-color: lavenderblush; background-image: url("images/Hyundai__.pn
   font-size:25pt; height: 50px;
   font-weight:normal; padding:20px 30px;
   word-break:normal;
-  border-color:beige;color: mintcream;background-color:plum;
-  text-align:center; opacity:0.9; border-style:solid;
-  vertical-align:middle;
+  color: mintcream;background-color:plum;
+  text-align:center; opacity:0.9;
+  vertical-align:bottom;
 }
 .center {
    display: block;
@@ -38,44 +48,98 @@ div.item {
   vertical-align: text-bottom;
   display: inline-block;
   text-align: center;
-  width: 80%;
+  width: 70%;
 }
 
-footer{
+#footer{
   font-family:Tahoma, Geneva, sans-serif !important;
   font-size:18px; padding:20px 30px;
   font-weight:normal;height: 50px;
   word-break:normal;
-  border-color:beige;color:mintcream;background-color: plum;
-  text-align:center; opacity:0.9; border-style:solid;
+  color:mintcream;background-color: plum;
+  text-align:center; opacity:0.9;
   vertical-align:middle;
+}
+#greeting{
+  font-family:Tahoma, Geneva, sans-serif !important;
+  font-size:23px; padding:15px 15px;
+  font-weight:normal;height: 30px;
+  word-break:normal;border-color:beige;
+  color: #9e7294;background-color: mistyrose;
+  text-align:center; opacity:0.9;
+  vertical-align:middle;
+
 }
 p {
   font-family: "Arial Black";
   font-size: 20pt;
-  border-bottom-style: groove;
+  border-bottom-style: solid;
   border-bottom-color: #b3d4fc;
   border-bottom-width: thick;
+  margin-top: 30px;
 }
-
-.form{
-border-bottom-style: groove;
-  border-bottom-color: #b3d4fc;
-  border-bottom-width: thick;
-  padding-bottom: 30px ;
+.name{
+  font-family: Georgia;
+  font-size: 15pt;
+  text-align: center;
+  border-bottom-style: none;
+   margin-top: 0;
+  margin-bottom: 45px;
+}
+#catalog{
+  font-family: "Arial Black";
+  font-size: 18pt;
+  text-align: center;
+  padding:20px 20px;
+  margin: 40px 20px 30px 20px;
+  box-shadow: 0px 1px  0px 0 whitesmoke;
+}
+form{
+  padding-bottom: 10px ;
+  margin: 30px 0px 30px 0px;
 
 }
+nav{  box-shadow: 0 0px  5px 0 linen;}
 .btn{  background-color: palegreen;
   color: lightgoldenrodyellow;
   padding: 5px;
-  margin: 3px 0;
+  margin: 4px 0;
   border: none;
-  width: 4%;
-  border-radius: 3px;
+  width: 5%;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 17px;
+  box-shadow: 0 2px  4px 0 lightsteelblue;
 }
 .btn:hover {
   background-color: lightseagreen;
 
 }
+#form{
+  padding: 5px;
+  margin: 3px 0;
+  border: none;
+  width: 12%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  box-shadow: 3px 0 1px 0 #9e7294;
+}
+.btn2{ background-color: thistle;
+  color: mintcream;
+  padding: 5px;
+  margin: 3px 0;
+  border: none;
+  width: 4%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  box-shadow: 0 3px  4px 0 brown;
+}
+.btn2:hover{ background-color: mediumvioletred}
+
+.station{
+  text-align: center;
+}
+
+

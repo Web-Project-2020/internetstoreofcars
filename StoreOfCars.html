@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="description" content="variety of cars" />
+  <meta name="keywords" content="kind of cars, Hyundai, hyundai palisade, Toyota, BMW, Audi, Ford, Nissan, buy, store, cars" />
+  <link rel="stylesheet" href="1.css" >
+  <style>
+    :root{
+      --panel-bg-color: #dfe4ea;
+      --text-color: #2f3542;
+      --header-bg-color: plum;
+      --footer-bg-color: plum;
+      --body-bg-color: lavenderblush;
+      --btn-bg-color:palegreen;
+      --btn2-bg-color:  thistle;
+    }
+    :root[theme='dark'] {
+      --panel-bg-color: #9e7294;
+      --text-color: floralwhite;
+      --header-bg-color: #57034b;
+      --footer-bg-color: #57034b;
+      --body-bg-color: #804973;
+      --btn-bg-color:teal;
+      --btn2-bg-color:  #912685;
+    }
+    * {
+      margin: 0;
+    }
+    html{
+      height: 100%;
+    }
+    body{
+      height: 100%;
+      display: block;
+      flex-direction: column;
+      color: var(--text-color);
+      background-color: var(--body-bg-color);
+    }
+    nav{
+      padding: 1.2rem;
+      background: var(--panel-bg-color);
+    }
+    #header{
+      padding: 1rem;
+      background: var(--header-bg-color);
+    }
+    footer{
+      padding: 1rem;
+      background: var(--footer-bg-color);
+    }
+    #footer{background-color: var(--footer-bg-color);}
+    .btn{ background-color: var(--btn-bg-color);}
+    .btn2{background-color: var(--btn2-bg-color);}
+
+  </style>
+    <title>Store of cars</title>
+</head>
+<body>
+
+<header>
+  <pre id="header"><b>STORE OF CARS</b></pre>
+</header>
+
+<div class="station">
+  <pre id="greeting"><marquee behavior="alternate" direction="right" >
+     Welcome to our site! &#128521;
+  </marquee> </pre>
+</div>
+
+
+<nav>
+<p >Choose a car 🏎 </p>
+
+  <form class="form">
+    <!--suppress XmlDuplicatedId -->
+    <select name='year' id="form" >
+      <option value="select the year">Year of release</option>
+      <option value='90s'>1990s</option>
+      <option value='00s'>2000s</option>
+      <option value='10s'>2010s</option>
+    </select>
+
+
+    <!--suppress XmlDuplicatedId -->
+    <select name="mark" id="form">
+      <option value="select the mark ">Mark</option>
+      <option value="1 ">Hyundai</option>
+      <option value="2">Toyota</option>
+      <option value="3">BMW</option>
+    </select>
+
+    <input type="button" value="select" class="btn">
+  </form>
+
+</nav>
+
+<div >
+  <p id="catalog">Catalog of new cars</p>
+</div>
+<table border="0" cellspacing="0" align="center" width="1290px" height=" 270px"  style="margin-bottom: 150px; float: bottom"  >
+
+  <tr align="center">
+    <td >
+      <img src="images/logo_bmw.png" style="height: 70px; width: 150px" vspace="5px" hspace="5px"><br>
+      <p class="name"><b>BMW</b></p>
+    </td>
+    <td>
+      <img src="images/skoda-logo-.png" style="height: 80px; width: 80px" vspace="5px" hspace="5px"><br>
+      <p class="name"><b>Skoda</b></p>
+    </td>
+    <td><img src="images/nissan_PNG64.png" style="height: 70px; width: 100px" vspace="5px" hspace="5px"><br>
+      <p class="name"><b>Nissan</b></p></td>
+  </tr>
+
+  <tr align="center">
+    <td><img src="images/Porsche-logo-.png" style="height: 80px; width: 90px" vspace="5px" hspace="5px"><br>
+      <p class="name"><b>Porsche</b></p></td>
+    <td><img src="images/mercedes-benz-9-logo-png-transparent.png" style="height: 80px; width: 90px" vspace="5px" hspace="5px"><br>
+      <p class="name"><b>Mercedes-Benz</b></p></td>
+    <td><img src="images/audi-icon.png" style="height: 80px; width: 90px" vspace="5px" hspace="5px"><br>
+      <p class="name"><b>Audi</b></p></td>
+  </tr>
+
+  <tr align="center">
+    <td><img src="images/volk.jpg" style="height: 80px; width: 90px" vspace="5px" hspace="5px"><br>
+      <p class="name"><b>Volkswagen</b></p></td>
+    <td><img src="images/hyundai-logo.png" style="height: 80px; width: 90px" vspace="5px" hspace="5px"><br>
+     <p class="name"> <b>Hyundai</b></p></td>
+    <td><img src="images/ford-logo--png-.png" style="height: 70px; width: 110px" vspace="8px" hspace="7px"><br>
+      <p class="name" style="margin-top: 12px"><b>Ford</b></p></td>
+  </tr>
+
+  <tr align="center" >
+    <td ><img src="images/peug.png" style="height: 80px; width: 90px" vspace="5px" hspace="5px"><br>
+      <p class="name"><b>Peugeot</b></p></td>
+    <td><img src="images/yam%20.png" style="height: 80px; width: 90px" vspace="5px" hspace="5px"><br>
+      <p class="name"><b>Yamaha</b></p></td>
+    <td><img src="images/lexus.png" style="height: 70px; width: 150px" vspace="5px" hspace="5px"><br>
+      <p class="name"><b>Lexus</b></p></td>
+  </tr>
+</table>
+
+
+<footer >
+<div >
+  <input type="button" value="🌙" class="btn2" id="dark-theme" />
+
+  <a title="Twitter" href="https://twitter.com/home" style="text-decoration: none" type="button" target="_blank">
+
+      <img style="height: 35px; width: 35px; margin: 15px; opacity:0.9 " align="center" vspace="20px" hspace="20px"
+           src="images/twitter_.png"/>
+    </a>
+  <a title="Instagram" href="https://instagram.com/"style="text-decoration: none" type="button" target="_blank">
+
+      <img style="height: 35px; width: 35px; margin: 15px; opacity:0.8" align="center"  vspace="20px" hspace="20px"
+           src="images/logo-insta.webp"/>
+    </a>
+  <a title="Facebook" href="https://facebook.com/"style="text-decoration: none"  type="button" target="_blank">
+
+      <img style="height: 35px; width: 35px; margin: 15px; opacity:0.7" align="center"  vspace="20px" hspace="20px"
+           src="images/iconfacebook.png"/>
+   </a>
+  <b><pre  id="footer">   Copyright © 2020, Business solutions, All rights reserved.  </pre> </b>
+</div>
+
+</footer>
+
+
+<script>
+  const toggleBtn = document.querySelector("#dark-theme");
+  toggleBtn.addEventListener("click", function() {
+    if(document.documentElement.hasAttribute("theme")){
+      document.documentElement.removeAttribute("theme");
+    }
+    else{
+      document.documentElement.setAttribute("theme", "dark");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
