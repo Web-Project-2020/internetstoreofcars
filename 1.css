@@ -32,11 +32,12 @@ body{background-color: lavenderblush; background-image: url("images/Hyundai__.pn
 #header{
   font-family:Tahoma, Geneva, sans-serif !important;
   font-size:25pt; height: 50px;
-  font-weight:normal; padding:20px 30px;
+  font-weight:normal; padding:20px 30px 20px 30px;
   word-break:normal;
   color: mintcream;background-color:plum;
   text-align:center; opacity:0.9;
   vertical-align:bottom;
+  display: inherit;
 }
 .center {
    display: block;
@@ -53,8 +54,8 @@ div.item {
 
 #footer{
   font-family:Tahoma, Geneva, sans-serif !important;
-  font-size:18px; padding:20px 30px;
-  font-weight:normal;height: 50px;
+  font-size:18px; display: inherit;
+  font-weight:normal;height: 290px;
   word-break:normal;
   color:mintcream;background-color: plum;
   text-align:center; opacity:0.9;
@@ -103,7 +104,8 @@ nav{  box-shadow: 0 0px  5px 0 linen;}
 .btn{  background-color: palegreen;
   color: lightgoldenrodyellow;
   padding: 5px;
-  margin: 4px 0;
+  margin: 4px 0 ;
+  margin-left: 12px;
   border: none;
   width: 5%;
   border-radius: 10px;
@@ -119,6 +121,7 @@ nav{  box-shadow: 0 0px  5px 0 linen;}
   padding: 5px;
   margin: 3px 0;
   border: none;
+  margin-right: 9px;
   width: 12%;
   border-radius: 10px;
   cursor: pointer;
@@ -141,5 +144,3 @@ nav{  box-shadow: 0 0px  5px 0 linen;}
 .station{
   text-align: center;
 }
-
-
