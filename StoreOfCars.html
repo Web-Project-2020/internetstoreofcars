@@ -52,6 +52,28 @@
     #footer{background-color: var(--footer-bg-color);}
     .btn{ background-color: var(--btn-bg-color);}
     .btn2{background-color: var(--btn2-bg-color);}
+    a:link
+    {
+      text-decoration: none;
+      color: lavender;
+    }
+    a:visited
+    {
+      text-decoration:none;
+     color:rosybrown;
+    }
+    a:hover
+    {
+      text-decoration:underline;
+      color: palevioletred;
+      font-size:1.1em;
+    }
+    a:active
+    {
+      text-decoration:none;
+      color:paleturquoise;
+      font-size:1.1em;
+    }
 
   </style>
     <title>Store of cars</title>
@@ -59,8 +81,21 @@
 <body>
 
 <header>
-  <pre id="header"><b>STORE OF CARS</b></pre>
+  <pre id="header" style="text-align: center; "><img  style="height: 60px; width: 60px;float: inside; margin-left: 1.7em " align="center" vspace="5px" hspace="5px"
+                                                      src="images/2x/LOGOTIPE.png"/><b>   STORE OF CARS</b><a title="Autorithation" href="https://google.com/"
+                                                                                      style="text-decoration: none" type="button" target="_blank"><img
+    style="height: 50px; width: 50px;  " align="right" vspace="15px" hspace="15px"
+    src="images/twotone_a2ccount_circle_white_24dp.png"/></a><a title="Shopping cart" href="https://google.com/" style="text-decoration: none"
+             type="button" target="_blank"><img  style="height: 50px; width: 50px; " align="right" vspace="15px" hspace="15px"
+      src="images/twotone_shoppin2g_cart_white_24dp.png"/></a><a title="Address" href="https://google.com/" style="text-decoration: none"
+                                                                                                                type="button" target="_blank"><img  style="height: 50px; width: 50px;
+" align="right" vspace="5px"
+                                                                                                                                                    hspace="5px" src="images/twotone_r2oom_white_24dp.png"/></a>
+  </pre>
 </header>
+
+
+
 
 <div class="station">
   <pre id="greeting"><marquee behavior="alternate" direction="right" >
@@ -72,7 +107,7 @@
 <nav>
 <p >Choose a car 🏎 </p>
 
-  <form class="form">
+  <form class="form"  action="get.php" method="get">
     <!--suppress XmlDuplicatedId -->
     <select name='year' id="form" >
       <option value="select the year">Year of release</option>
@@ -90,7 +125,13 @@
       <option value="3">BMW</option>
     </select>
 
-    <input type="button" value="select" class="btn">
+
+    <input  name="range"
+      title="Price $" step="2000" style="cursor: pointer;  width: 500px ;
+      vertical-align: middle" type="range" value="1" min="1" max="100000000000">
+
+
+    <input type="submit" value="select" class="btn">
   </form>
 
 </nav>
@@ -143,25 +184,29 @@
 
 
 <footer >
-<div >
-  <input type="button" value="🌙" class="btn2" id="dark-theme" />
+<div ><pre  id="footer">
+  <input align="left" type="button" value="🌙" class="btn2" id="dark-theme" /><a  title="Twitter"
+     href="https://twitter.com/home" style="text-decoration: none" type="button" target="_blank">   <img
+  style="height: 35px; width: 35px; margin: 15px; opacity:0.9 " align="center" vspace="20px" hspace="20px"
+           src="images/twitter_.png"/></a><a
+    title="Instagram" href="https://instagram.com/"style="text-decoration: none" type="button" target="_blank"><img
+        style="height: 35px; width: 35px; margin: 15px; opacity:0.8" align="center"  vspace="20px" hspace="20px"
+           src="images/logo-insta.webp"/></a><a
+    title="Facebook" href="https://facebook.com/"style="text-decoration: none"  type="button" target="_blank"><img
+        style="height: 35px; width: 35px; margin: 15px; opacity:0.7" align="center"  vspace="20px" hspace="20px"
+           src="images/iconfacebook.png"/></a><br><a title="Review"
+  align="center" href="https://google.com/" style="text-align: left;
+  font-family: Arial; font-size: 16pt  " target="_blank">
+  Write a review </a><br><p style="font-family: Arial;
+      font-size: 15pt; border-bottom-style: none;" ><img
+  style="height: 35px; width: 35px;  opacity:0.9 " align="center"
+  src="images/twotone_call_white2_18dp.png"/>+ 010 001 224 397</p><br><a  title="Email"
+    href="https://mail.daum.net/login?url=https%3A%2F%2Fmail.daum.net%2F" style="text-align: left;
+  font-family: Arial; font-size: 16pt  " target="_blank"><img
+  style="height: 35px; width: 35px;  opacity:0.9 " align="center"
+  src="images/twot2one_email_white_24dp.png"/> store_of_cars@daum.net</a>
 
-  <a title="Twitter" href="https://twitter.com/home" style="text-decoration: none" type="button" target="_blank">
-
-      <img style="height: 35px; width: 35px; margin: 15px; opacity:0.9 " align="center" vspace="20px" hspace="20px"
-           src="images/twitter_.png"/>
-    </a>
-  <a title="Instagram" href="https://instagram.com/"style="text-decoration: none" type="button" target="_blank">
-
-      <img style="height: 35px; width: 35px; margin: 15px; opacity:0.8" align="center"  vspace="20px" hspace="20px"
-           src="images/logo-insta.webp"/>
-    </a>
-  <a title="Facebook" href="https://facebook.com/"style="text-decoration: none"  type="button" target="_blank">
-
-      <img style="height: 35px; width: 35px; margin: 15px; opacity:0.7" align="center"  vspace="20px" hspace="20px"
-           src="images/iconfacebook.png"/>
-   </a>
-  <b><pre  id="footer">   Copyright © 2020, Business solutions, All rights reserved.  </pre> </b>
+      Copyright © 2020, Business solutions, All rights reserved.  </pre> </b>
 </div>
 
 </footer>
